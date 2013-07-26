@@ -11,7 +11,7 @@
 </head>
 
 <body>
-	<div class="wrap">
+	<div class="header-wrap">
 		<div class="container header">
 			<div class="row-fluid">
 				<div class="span8">
@@ -23,18 +23,29 @@
 			</div>
             <div class="big-search">
                 <div class="row-fluid">
-                    <div class="span12 discovery-search-wrap">
-                        <div class="btn-group span3" id="myTab" data-toggle="buttons-radio">
-                            <button href="#community" id="discover-community-button" class="btn btn-primary span6 active" data-toggle="tab">Community</button>
-                            <button href="#calendar" id="discover-calendar-button" class="btn btn-primary span6" data-toggle="tab">Calendar</button>
-                        </div>
-                        <input class="discovery-search span6" id="appendedPrependedDropdownButton" type="text" placeholder="search">
-                        <a href="#" rel="popover-with-html"class="help-inline" id="search-popover" data-content="<form class='search-popover'><input type='text' class='span4' placeholder='this is for placeholder'></form>">Ujung Pandang, Indonesia</a>
+                    <div class="span12 wrap">
+                        <span>Kota</span>
+                        <input type="text" placeholder="search">
+                        <span>Type</span>
+                        <input type="text" placeholder="Mis. LSM">
+                        <button class="btn btn-danger"><i class="icon-search"></i> Search</button>
                     </div>
                 </div>
             </div>
 		</div>
 	</div>
+    <div class="content-wrap">
+        <div class="container content">
+            <div class="row-fluid">
+                <div class="span3 thumbnail">
+                    <img src="img/sample_1.jpg">
+                    <h4>Title</h4>
+                    <small class="muted">by member</small>
+                    <p>Des</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
 	<!-- Le javascript
     ================================================== -->
