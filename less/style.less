@@ -1,0 +1,85 @@
+// Custom Variable
+
+// -- Google Font (Ubuntu)
+@ubuntuFontFamily:		'Ubuntu', sans-serif;
+
+
+// --------------- style ------------ //
+
+body {
+	background: @white url(../img/fabric_of_squares_gray.png) repeat center top;
+}
+
+// override headings fonts type
+h1,h2,h3,h4,h5,h6 {font-family: @ubuntuFontFamily;}
+
+
+
+.header-wrap {
+	background-color: @grayLight;
+	padding-top: 1px;
+	margin-bottom: 10px;
+
+	.container {
+		margin-top: 15px;
+	}
+}
+
+.top-nav {
+	margin-bottom: 50px;
+}
+
+.big-search {
+
+	input {
+		margin-bottom: 0;
+	}
+
+	margin: 50px 0;
+	letter-spacing: 1px;
+	font-size: 18px;
+	font-family: @ubuntuFontFamily;
+	font-weight: bold;
+	padding: 20px 30px;
+	#gradient > .vertical(@grayDark, @grayDarker);
+	.border-radius(8px);
+	color: @white;
+}
+
+// content section 
+
+.content-wrap {
+	padding-top: 25px;
+}
+
+.content {
+	font: 12px/16px @sansFontFamily;
+}
+
+.stats {
+	border-top: 1px solid @grayLighter;
+	& [class*="span"] {
+		min-height: 25px;
+	}
+
+	& [class*="span"]:not(:first-child) {
+		border-left: 1px solid @grayLighter;
+	}
+
+	.progress {
+		height: 10px;
+		margin-bottom: 5px;
+	}
+
+	#gradient > .vertical(@white, @grayLighter);
+	margin: -4px -4px -3px;
+	padding: 7px 4px 3px;
+	min-height: 10px;
+}
+
+// bottom section
+.bottom-section {
+	margin-top: 5px;
+	min-height: 50px;
+	background-color: @black;
+}
