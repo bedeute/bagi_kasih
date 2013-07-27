@@ -56,14 +56,31 @@ h1,h2,h3,h4,h5,h6 {font-family: @ubuntuFontFamily;}
 	font: 12px/16px @sansFontFamily;
 }
 
+.content > .row-fluid > .thumbnail { 
+	height: 400px;
+	position:relative;
+	p, h4 {
+		padding: 0 5px;
+	}
+
+	span {
+		margin-bottom: 5px;
+		color: @grayLight;
+	}
+
+}
+
 .stats {
+	position:absolute;
+	bottom: 0;
+	left: 0;
 	border-top: 1px solid @grayLighter;
 	& [class*="span"] {
 		min-height: 25px;
 	}
 
 	& [class*="span"]:not(:first-child) {
-		border-left: 1px solid @grayLighter;
+		border-left: 2px solid @grayLighter;
 	}
 
 	.progress {
@@ -72,9 +89,24 @@ h1,h2,h3,h4,h5,h6 {font-family: @ubuntuFontFamily;}
 	}
 
 	#gradient > .vertical(@white, @grayLighter);
-	margin: -4px -4px -3px;
 	padding: 7px 4px 3px;
 	min-height: 10px;
+	width: 96.5%;
+}
+
+
+// detail page style
+
+.detail {
+
+}
+
+.left-side {
+
+	.for-pict {
+		padding: 10px;
+	}
+
 }
 
 // bottom section

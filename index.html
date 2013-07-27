@@ -4,10 +4,10 @@
 <title>Bagi Kasih</title>
 
 <!-- Assets -->
-<link rel="stylesheet" href="less/bootstrap.css" type="text/css">
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css">
 <link rel="stylesheet" href="resources/font-awesome/css/font-awesome.min.css" type="text/css">
+<link rel="stylesheet" href="resources/silviomoreto-bootstrap-select/bootstrap-select.css" type="text/css">
 <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700' rel='stylesheet' type='text/css'>
-
 <!-- end of Assets -->
 </head>
 
@@ -19,7 +19,7 @@
 					Logo Here | <small>Tagline goes here</small>
 				</div>
 				<div class="span4">
-					<button class="btn btn-primary pull-right">Sign In</button>
+					<button class="btn pull-right">Sign In</button>
 				</div>
 			</div>
             <center>
@@ -44,94 +44,128 @@
 		</div>
 	</div>
     <!-- Content section -->
-    <div class="content-wrap">
+    <div class="content-wrap">  
         <div class="container content">
+            <span>Sort by:</span>
+            <select class="selectpicker span2">
+                <option>Latest Joined</option>
+                <option>Popular</option>
+                <option>etc...</option>
+            </select>
+            <span>Category:</span>
+            <select class="selectpicker span2">
+                <option>LSM</option>
+                <option>Yayasan</option>
+                <option>etc...</option>
+            </select>
+            <br>
+            <br>
             <div class="row-fluid">
                 <!-- the Item -->
                 <div class="span3 thumbnail">
-                    <img src="img/sample_1.jpg">
-                    <h4>Title</h4>
+                    <a href="#">
+                        <img src="img/sample_1.jpg">
+                        <h4>Title</h4>
+                    </a>
                     
                     <p>
-                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. 
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint...
                     </p>
-                    <div class="row-fluid stats">
-                        <div class="progress progress-striped active">
-                          <div class="bar" style="width: 40%;"></div>
-                        </div>
+                    <span>&nbsp;<i class="icon-map-marker icon-large"></i>&nbsp;&nbsp;Surabaya, Jawa Timur</span>
+                    <div class="stats">
                         <div class="row-fluid">
-                            <div class="span9">
-                                <strong>Rp.600.000</strong>&nbsp;<em class="muted">terkumpul</em><br>
-                                <small class="muted">dari total Rp.4.000.000</small>
+                            <div class="progress progress-striped active">
+                              <div class="bar" style="width: 40%;"></div>
                             </div>
-                            <div class="span3 text-center">
-                                <i class="icon-gift icon-large"></i><br>500
+                            <div class="row-fluid">
+                                <div class="span9">
+                                    <strong>Rp.600.000</strong>&nbsp;<em class="muted">terkumpul</em><br>
+                                    <small class="muted">dari total Rp.4.000.000</small>
+                                </div>
+                                <div class="span3 text-center">
+                                    <i class="icon-gift icon-large"></i><br>500
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                                <div class="span3 thumbnail">
-                    <img src="img/sample_4.jpg">
-                    <h4>Title</h4>
+                <div class="span3 thumbnail">
+                    <a href="#">
+                        <img src="img/sample_1.jpg">
+                        <h4>Title</h4>
+                    </a>
                     
                     <p>
-                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. 
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint...
                     </p>
-                    <div class="row-fluid stats">
-                        <div class="progress progress-striped active">
-                          <div class="bar" style="width: 40%;"></div>
-                        </div>
+                    <span>&nbsp;<i class="icon-map-marker icon-large"></i>&nbsp;&nbsp;Surabaya, Jawa Timur</span>
+                    <div class="stats">
                         <div class="row-fluid">
-                            <div class="span9">
-                                <strong>Rp.600.000</strong>&nbsp;<em class="muted">terkumpul</em><br>
-                                <small class="muted">dari total Rp.4.000.000</small>
+                            <div class="progress progress-striped active">
+                              <div class="bar" style="width: 40%;"></div>
                             </div>
-                            <div class="span3 text-center">
-                                <i class="icon-gift icon-large"></i><br>500
+                            <div class="row-fluid">
+                                <div class="span9">
+                                    <strong>Rp.600.000</strong>&nbsp;<em class="muted">terkumpul</em><br>
+                                    <small class="muted">dari total Rp.4.000.000</small>
+                                </div>
+                                <div class="span3 text-center">
+                                    <i class="icon-gift icon-large"></i><br>500
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                                <div class="span3 thumbnail">
-                    <img src="img/sample_2.jpg">
-                    <h4>Title</h4>
+                <div class="span3 thumbnail">
+                    <a href="#">
+                        <img src="img/sample_1.jpg">
+                        <h4>Title</h4>
+                    </a>
                     
                     <p>
-                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. 
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint...
                     </p>
-                    <div class="row-fluid stats">
-                        <div class="progress progress-striped active">
-                          <div class="bar" style="width: 40%;"></div>
-                        </div>
+                    <span>&nbsp;<i class="icon-map-marker icon-large"></i>&nbsp;&nbsp;Surabaya, Jawa Timur</span>
+                    <div class="stats">
                         <div class="row-fluid">
-                            <div class="span9">
-                                <strong>Rp.600.000</strong>&nbsp;<em class="muted">terkumpul</em><br>
-                                <small class="muted">dari total Rp.4.000.000</small>
+                            <div class="progress progress-striped active">
+                              <div class="bar" style="width: 40%;"></div>
                             </div>
-                            <div class="span3 text-center">
-                                <i class="icon-gift icon-large"></i><br>500
+                            <div class="row-fluid">
+                                <div class="span9">
+                                    <strong>Rp.600.000</strong>&nbsp;<em class="muted">terkumpul</em><br>
+                                    <small class="muted">dari total Rp.4.000.000</small>
+                                </div>
+                                <div class="span3 text-center">
+                                    <i class="icon-gift icon-large"></i><br>500
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                                <div class="span3 thumbnail">
-                    <img src="img/sample_3.jpg">
-                    <h4>Title</h4>
+                <div class="span3 thumbnail">
+                    <a href="#">
+                        <img src="img/sample_1.jpg">
+                        <h4>Title</h4>
+                    </a>
                     
                     <p>
-                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. 
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint...
                     </p>
-                    <div class="row-fluid stats">
-                        <div class="progress progress-striped active">
-                          <div class="bar" style="width: 40%;"></div>
-                        </div>
+                    <span>&nbsp;<i class="icon-map-marker icon-large"></i>&nbsp;&nbsp;Surabaya, Jawa Timur</span>
+                    <div class="stats">
                         <div class="row-fluid">
-                            <div class="span9">
-                                <strong>Rp.600.000</strong>&nbsp;<em class="muted">terkumpul</em><br>
-                                <small class="muted">dari total Rp.4.000.000</small>
+                            <div class="progress progress-striped active">
+                              <div class="bar" style="width: 40%;"></div>
                             </div>
-                            <div class="span3 text-center">
-                                <i class="icon-gift icon-large"></i><br>500
+                            <div class="row-fluid">
+                                <div class="span9">
+                                    <strong>Rp.600.000</strong>&nbsp;<em class="muted">terkumpul</em><br>
+                                    <small class="muted">dari total Rp.4.000.000</small>
+                                </div>
+                                <div class="span3 text-center">
+                                    <i class="icon-gift icon-large"></i><br>500
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -164,6 +198,12 @@
     <script src="js/bootstrap-carousel.js"></script>
     <script src="js/bootstrap-typeahead.js"></script>
     <script src="js/bootstrap-affix.js"></script>
+
+    <script src="resources/silviomoreto-bootstrap-select/bootstrap-select.min.js"></script>
+
+    <script>
+        $('.selectpicker').selectpicker();
+    </script>
 </body>
 
 </html>
