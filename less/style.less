@@ -16,7 +16,7 @@ h1,h2,h3,h4,h5,h6 {font-family: @ubuntuFontFamily;}
 
 
 .header-wrap {
-	background-color: @grayLight;
+	#gradient > .vertical(lighten(spin(@red, 25%), 50%), rgba(255,255,255,.00));
 	padding-top: 1px;
 	margin-bottom: 10px;
 
@@ -49,14 +49,14 @@ h1,h2,h3,h4,h5,h6 {font-family: @ubuntuFontFamily;}
 // content section 
 
 .content-wrap {
-	padding-top: 25px;
+	padding-top: 15px;
 }
 
 .content {
 	font: 12px/16px @sansFontFamily;
 }
 
-.content > .row-fluid > .thumbnail { 
+.splash-item { 
 	height: 400px;
 	position:relative;
 	p, h4 {
@@ -107,6 +107,10 @@ h1,h2,h3,h4,h5,h6 {font-family: @ubuntuFontFamily;}
 		padding: 10px;
 	}
 
+}
+
+.right-side {
+	padding: 10px;
 }
 
 // bottom section

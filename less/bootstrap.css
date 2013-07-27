@@ -5313,7 +5313,22 @@ h6 {
 .content {
   font: 12px/16px "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+.content > .row-fluid > .thumbnail {
+  height: 400px;
+  position: relative;
+}
+.content > .row-fluid > .thumbnail p,
+.content > .row-fluid > .thumbnail h4 {
+  padding: 0 5px;
+}
+.content > .row-fluid > .thumbnail span {
+  margin-bottom: 5px;
+  color: #999999;
+}
 .stats {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   border-top: 1px solid #eeeeee;
   background-color: #f8f8f8;
   background-image: -moz-linear-gradient(top, #ffffff, #eeeeee);
@@ -5323,19 +5338,25 @@ h6 {
   background-image: linear-gradient(to bottom, #ffffff, #eeeeee);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffeeeeee', GradientType=0);
-  margin: -4px -4px -3px;
   padding: 7px 4px 3px;
   min-height: 10px;
+  width: 96.5%;
 }
 .stats [class*="span"] {
   min-height: 25px;
 }
 .stats [class*="span"]:not(:first-child) {
-  border-left: 1px solid #eeeeee;
+  border-left: 2px solid #eeeeee;
 }
 .stats .progress {
   height: 10px;
   margin-bottom: 5px;
+}
+.left-side .for-pict {
+  padding: 10px;
+}
+.right-side {
+  padding: 40px;
 }
 .bottom-section {
   margin-top: 5px;

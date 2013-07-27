@@ -745,7 +745,7 @@ dd {
   margin-left: 180px;
 }
 hr {
-  margin: 20px 0;
+  margin: 10px 0;
   border: 0;
   border-top: 1px solid #eeeeee;
   border-bottom: 1px solid #ffffff;
@@ -5274,7 +5274,14 @@ h6 {
   font-family: 'Ubuntu', sans-serif;
 }
 .header-wrap {
-  background-color: #999999;
+  background-color: rgba(244, 220, 197, 0.6);
+  background-image: -moz-linear-gradient(top, #f4dcc5, rgba(255, 255, 255, 0));
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f4dcc5), to(rgba(255, 255, 255, 0)));
+  background-image: -webkit-linear-gradient(top, #f4dcc5, rgba(255, 255, 255, 0));
+  background-image: -o-linear-gradient(top, #f4dcc5, rgba(255, 255, 255, 0));
+  background-image: linear-gradient(to bottom, #f4dcc5, rgba(255, 255, 255, 0));
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff4dcc5', endColorstr='#00ffffff', GradientType=0);
   padding-top: 1px;
   margin-bottom: 10px;
 }
@@ -5308,20 +5315,20 @@ h6 {
   margin-bottom: 0;
 }
 .content-wrap {
-  padding-top: 25px;
+  padding-top: 15px;
 }
 .content {
   font: 12px/16px "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.content > .row-fluid > .thumbnail {
+.splash-item {
   height: 400px;
   position: relative;
 }
-.content > .row-fluid > .thumbnail p,
-.content > .row-fluid > .thumbnail h4 {
+.splash-item p,
+.splash-item h4 {
   padding: 0 5px;
 }
-.content > .row-fluid > .thumbnail span {
+.splash-item span {
   margin-bottom: 5px;
   color: #999999;
 }
@@ -5353,6 +5360,9 @@ h6 {
   margin-bottom: 5px;
 }
 .left-side .for-pict {
+  padding: 10px;
+}
+.right-side {
   padding: 10px;
 }
 .bottom-section {
