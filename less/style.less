@@ -8,6 +8,7 @@
 
 body {
 	background: @white url(../img/fabric_of_squares_gray.png) repeat center top;
+	color: @gray;
 }
 
 // override headings fonts type
@@ -17,6 +18,7 @@ h1,h2,h3,h4,h5,h6 {font-family: @ubuntuFontFamily;}
 
 .header-wrap {
 	background-color: transparent;
+	#gradient > .vertical(rgba(255,255,255,1), rgba(255,255,255,0));
 	padding-top: 1px;
 	margin-bottom: 5px;
 	border-bottom: 1px solid lighten(@grayLight, 25%);
@@ -28,13 +30,11 @@ h1,h2,h3,h4,h5,h6 {font-family: @ubuntuFontFamily;}
 }
 
 .top-nav {
-	#gradient > .vertical(@white, @grayLighter);
-	border-bottom: 1px solid darken(@grayLighter, 10%);
-	.box-shadow(0 1px 3px rgba(0,0,0,.1));
-	padding: 5px 0px;
-	background-color: transparent;
 
-	.container {margin-top: 0;}
+}
+
+.fix-space-on-top {
+	margin: 10px;
 }
 
 .big-search {
@@ -125,14 +125,93 @@ h1,h2,h3,h4,h5,h6 {font-family: @ubuntuFontFamily;}
 	h3 {margin-top: 0;}
 }
 
+.detail-boxes {
+
+	.control-label {
+		width: 100px;
+	}
+
+	.controls {
+		margin-left: 120px;
+	}
+
+	.form-horizontal {
+		margin-bottom: 0;
+	}
+
+	table {
+		margin-bottom: 0;
+	}
+
+	hr {
+		border: 0;
+		border-bottom: 1px solid lighten(@grayLight, 25%);
+		border-top: 1px solid @white;
+		margin: 5px;
+	}
+
+	h3,h4,h5,h6 {
+		text-transform: uppercase;
+		color: @grayLight;
+		margin-top: 0;
+	}
+}
+
+.detail-boxes-left {
+
+	.nav-list {
+		padding-left: 7px;
+		padding-right: 7px;
+
+		.nav-header h5{
+			margin-bottom: 0;
+		}
+	}
+
+	hr {
+		border: 0;
+		border-bottom: 1px solid lighten(@grayLight, 25%);
+		border-top: 1px solid @white;
+		margin: 5px;
+	}
+
+	h3,h4,h5,h6 {
+		text-transform: uppercase;
+		color: @grayLight;
+		margin-top: 0;
+	}
+}
+
+.popover-info-user {
+	h5 {
+		color: red;
+		padding: 10px;	
+	}
+}
+
+#hidden-hover-info-content {
+	display: none;
+	padding: 10px;
+
+}
+
 // bottom section
 .bottom-section {
 	font: 12px/14px @ubuntuFontFamily;
-	color: @white;
+	color: @gray;
 	margin-top: 10px;
 	min-height: 50px;
 	background-color: @black;
 	padding-bottom: 10px;
+
+	a {
+		color: @gray;
+		
+		&:hover {
+			color: @linkColor;
+			text-decoration: none;
+		}
+	}
 
 	ul {
 		margin-top: 10px;
