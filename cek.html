@@ -13,26 +13,23 @@
 
 <body>
 	<div class="header-wrap">
-        <div class="top-nav">
-            <div class="container">
-                <div class="row-fluid">
-                    <div class="span8">
-                        Logo Here | <small>Tagline goes here</small>
-                    </div>
-                    <div class="span4">
-                        <button class="btn pull-right">Sign In</button>
-                    </div>
-                </div>
-            </div>
+		<div class="container header">
+			<div class="row-fluid top-nav">
+				<div class="span8">
+					Logo Here | <small>Tagline goes here</small>
+				</div>
+				<div class="span4">
+					<button class="btn btn-primary pull-right">Sign In</button>
+				</div>
+			</div>
         </div>
-    </div>
-    <!-- Content section -->
-    <div class="content-wrap">
+	</div>
+	<div class="content-wrap">
         <div class="container content detail">
             <div class="row-fluid">
-                <div class="span3 left-side">
+                <div class="span4 left-side">
                     <center>
-                        <img src="http://pixelholdr.com/cute/210x180" class="img-polaroid">
+                        <img src="http://pixelholdr.com/cute/280x250" class="img-polaroid">
                     </center>
                     <br>
                     <div class="well well-small">
@@ -47,34 +44,29 @@
                     </div>
                 </div>
                 <!-- Right side of detail page -->
-                <div class="span9 thumbnail right-side">
+                <div class="span8 thumbnail right-side">
                     <div class="row-fluid">
-                        <div class="span9 profile-title">
+                        <div class="span9">
                             <h3>This is for long long title should be...</h3>
-                            <div class="fb-like" data-href="https://www.facebook.com/waku2w" data-send="true" data-width="500" data-show-faces="false"></div>
                         </div>
                         <div class="span3">
-                            <button class="btn btn-info span12"><h4>Kasih Donasi</h4></button>
+                            <button class="btn btn-info">Kasih Donasi</button>
                         </div>
                     </div>
                     <hr>
-                       
+                    <!-- <div class="fb-like" data-href="https://www.facebook.com/waku2w" data-send="true" data-width="450" data-show-faces="false"></div> -->
                     <!-- tabs -->
                     <ul id="myTab" class="nav nav-tabs">
-                        <li class="active"><a href="#info" data-toggle="tab">Info</a></li>
-                        <li class=""><a href="#donasi" data-toggle="tab">Donasi</a></li>
-                        <li class=""><a href="#volunteer" data-toggle="tab">Volunteer</a></li>
+                        <li class="active"><a href="#deskripsi" data-toggle="tab">Deskripsi</a></li>
+                        <li class=""><a href="#update" data-toggle="tab">Profile</a></li>
                         <li class=""><a href="#foto" data-toggle="tab">Foto</a></li>
                     </ul>
                     <div id="myTabContent" class="tab-content">
-                        <div class="tab-pane fade active in" id="info">
+                        <div class="tab-pane fade active in" id="deskripsi">
                             <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
                         </div>
-                        <div class="tab-pane fade" id="donasi">
+                        <div class="tab-pane fade" id="update">
                             <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
-                        </div>
-                        <div class="tab-pane fade active in" id="volunteer">
-                            <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
                         </div>
                         <div class="tab-pane fade" id="foto">
                             <div class="row-fluid">
@@ -133,18 +125,14 @@
                     <div class="well well-small">
                         <h5>Member:</h5>
                         <div class="row-fluid">
-                            <a id="popover-hover" class="span2" href="#" data-content="
-                            <div class'row-fluid'>
-                                <div class='span4'>
-                                    <img src='img/sample_1.jpg' class='img-rounded'></div>
-                                    <div class='span6'><h5>Nama Anggota</h5></div>
-                                </div>
-                            " rel="popover" data-placement="top" data-trigger="hover">
-                                <img src="img/sample_1.jpg" class="img-rounded">
-                            </a>
                             <div class="span2">
-                                <img src="img/sample_4.jpg" class="img-rounded">
+                                <a id="popover" data-trigger="hover">
+                                    <img src="img/sample_1.jpg" class="img-rounded">
+                                </a>
                             </div>
+                            <a href="#" id="popover" data-trigger="hover" class="span2" data-content="Popover with data-trigger">
+                                <img src="img/sample_4.jpg" class="img-rounded">
+                            </a>
                             <div class="span2">
                                 <img src="img/sample_2.jpg" class="img-rounded">
                             </div>
@@ -180,23 +168,14 @@
             </div>
         </div>
     </div>
-    <!-- end Content section -->
     <footer class="bottom-section">
-        <div class="container">
-        <center>    
-            <ul class="inline">
-                <li>
-                    <a href="#">Menu#1</a>
-                </li>
-                <li>
-                    <a href="#">Menu#2</a>
-                </li>
-            </ul>
-            with love by <a href="mataharilabs.com">mataharilabs.com</a>
-        </center>
+
+    	<a id="popoverData" class="btn" href="#" data-content="Popover with data-trigger" rel="popover" data-placement="bottom" data-original-title="Title" data-trigger="hover">Popover with data-trigger</a>
+        &nbsp;
+
     </footer>
 
-	<!-- Le javascript
+    <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
@@ -216,23 +195,10 @@
     <script src="js/bootstrap-affix.js"></script>
 
     <script src="resources/silviomoreto-bootstrap-select/bootstrap-select.min.js"></script>
-    
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=219796328101516";
-    fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
 
-    
-     
-
-    $('#popover-hover').popover({ html: true});
-
-    </script> 
-
+    <script>
+    $('.selectpicker').selectpicker();
+    $("#popover").popover({ trigger: "hover" });
+    </script>
 </body>
-
 </html>
