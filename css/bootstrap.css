@@ -212,12 +212,12 @@ body {
   background-color: #ffffff;
 }
 a {
-  color: #0088cc;
+  color: #46a546;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #005580;
+  color: #378137;
   text-decoration: underline;
 }
 .img-rounded {
@@ -977,14 +977,14 @@ input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="color"]:focus,
 .uneditable-input:focus {
-  border-color: rgba(82, 168, 236, 0.8);
+  border-color: rgba(95, 192, 95, 0.6);
   outline: 0;
   outline: thin dotted \9;
   /* IE6-9 */
 
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
-  -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
-  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(95,192,95,.6);
+  -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(95,192,95,.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(95,192,95,.6);
 }
 input[type="radio"],
 input[type="checkbox"] {
@@ -5275,24 +5275,26 @@ h6 {
   font-family: 'Ubuntu', sans-serif;
 }
 .header-wrap {
-  background-color: transparent;
-  background-color: rgba(255, 255, 255, 0.6);
-  background-image: -moz-linear-gradient(top, #ffffff, rgba(255, 255, 255, 0));
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(rgba(255, 255, 255, 0)));
-  background-image: -webkit-linear-gradient(top, #ffffff, rgba(255, 255, 255, 0));
-  background-image: -o-linear-gradient(top, #ffffff, rgba(255, 255, 255, 0));
-  background-image: linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0));
-  background-repeat: repeat-x;
+  background-color: rgba(255, 255, 255, 0);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), color-stop(90%, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)));
+  background-image: -webkit-linear-gradient(#ffffff, rgba(255, 255, 255, 0) 90%, rgba(255, 255, 255, 0));
+  background-image: -moz-linear-gradient(top, #ffffff, rgba(255, 255, 255, 0) 90%, rgba(255, 255, 255, 0));
+  background-image: -o-linear-gradient(#ffffff, rgba(255, 255, 255, 0) 90%, rgba(255, 255, 255, 0));
+  background-image: linear-gradient(#ffffff, rgba(255, 255, 255, 0) 90%, rgba(255, 255, 255, 0));
+  background-repeat: no-repeat;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#00ffffff', GradientType=0);
   padding-top: 1px;
   margin-bottom: 5px;
-  border-bottom: 1px solid #d9d9d9;
-  -webkit-box-shadow: inset 0 -1px #ffffff;
-  -moz-box-shadow: inset 0 -1px #ffffff;
-  box-shadow: inset 0 -1px #ffffff;
 }
-.header-wrap .container {
+.header-wrap .header {
   margin-top: 15px;
+  border-bottom: 1px solid #d9d9d9;
+  -webkit-box-shadow: 0 1px #ffffff;
+  -moz-box-shadow: 0 1px #ffffff;
+  box-shadow: 0 1px #ffffff;
+}
+.top-nav {
+  margin-top: 10px;
 }
 .fix-space-on-top {
   margin: 10px;
@@ -5319,6 +5321,12 @@ h6 {
 }
 .big-search input {
   margin-bottom: 0;
+  height: 40px;
+}
+.big-search .btn-success {
+  height: 40px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 .content-wrap {
   padding-top: 15px;
@@ -5374,6 +5382,9 @@ h6 {
 .profile-title h3 {
   margin-top: 0;
 }
+.detail-boxes > .form-horizontal > .control-group:last-child {
+  margin-bottom: 5px;
+}
 .detail-boxes .control-label {
   width: 100px;
 }
@@ -5400,6 +5411,10 @@ h6 {
   color: #999999;
   margin-top: 0;
 }
+.detail-boxes-left > .nav-list > .divider {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
 .detail-boxes-left .nav-list {
   padding-left: 7px;
   padding-right: 7px;
@@ -5409,9 +5424,9 @@ h6 {
 }
 .detail-boxes-left hr {
   border: 0;
-  border-bottom: 1px solid #d9d9d9;
-  border-top: 1px solid #ffffff;
-  margin: 5px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #ffffff;
+  margin: 5px 0 10px;
 }
 .detail-boxes-left h3,
 .detail-boxes-left h4,
