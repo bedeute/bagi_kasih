@@ -50,15 +50,16 @@ h1,h2,h3,h4,h5,h6 {font-family: @ubuntuFontFamily;}
 		padding-left: 30px;
 	}
 
-	margin: 50px 0;
+	margin: 30px 0;
 	letter-spacing: 1px;
 	font-size: 18px;
 	font-family: @ubuntuFontFamily;
 	font-weight: bold;
-	padding: 20px 30px;
-	#gradient > .vertical(@grayDark, @grayDarker);
+	padding: 10px 20px;
+	border: 1px solid @grayDark;
+	#gradient > .vertical(@gray, @grayDark);
 	.border-radius(8px);
-	color: @white;
+	color: @grayLighter;
 }
 
 // content section 
@@ -124,12 +125,16 @@ h1,h2,h3,h4,h5,h6 {font-family: @ubuntuFontFamily;}
 
 }
 
+.right-side > .row-fluid > .span3 > .btn {margin-bottom: 5px;}
+
 .right-side {
 	padding: 10px;
+
 }
 
 .profile-title {
-	h3 {margin-top: 0;}
+	h3 {margin-top: 0; margin-bottom: 0;}
+
 }
 
 .detail-boxes > .form-horizontal > .control-group:last-child {margin-bottom: 5px;}
