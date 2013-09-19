@@ -5266,14 +5266,6 @@ body {
   background: #ffffff url(../img/fabric_of_squares_gray.png) repeat center top;
   color: #555555;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Ubuntu', sans-serif;
-}
 .header-wrap {
   background-color: rgba(255, 255, 255, 0);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), color-stop(90%, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)));
@@ -5303,7 +5295,6 @@ h6 {
   margin: 30px 0;
   letter-spacing: 1px;
   font-size: 18px;
-  font-family: 'Ubuntu', sans-serif;
   font-weight: bold;
   padding: 10px 20px;
   border: 1px solid #333333;
@@ -5383,64 +5374,6 @@ h6 {
 .right-side {
   padding: 10px;
 }
-.profile-title h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-.detail-boxes > .form-horizontal > .control-group:last-child {
-  margin-bottom: 5px;
-}
-.detail-boxes .control-label {
-  width: 100px;
-}
-.detail-boxes .controls {
-  margin-left: 120px;
-}
-.detail-boxes .form-horizontal {
-  margin-bottom: 0;
-}
-.detail-boxes table {
-  margin-bottom: 0;
-}
-.detail-boxes hr {
-  border: 0;
-  border-bottom: 1px solid #d9d9d9;
-  border-top: 1px solid #ffffff;
-  margin: 5px;
-}
-.detail-boxes h3,
-.detail-boxes h4,
-.detail-boxes h5,
-.detail-boxes h6 {
-  text-transform: uppercase;
-  color: #999999;
-  margin-top: 0;
-}
-.detail-boxes-left > .nav-list > .divider {
-  margin-top: 5px;
-  margin-bottom: 0;
-}
-.detail-boxes-left .nav-list {
-  padding-left: 7px;
-  padding-right: 7px;
-}
-.detail-boxes-left .nav-list .nav-header h5 {
-  margin-bottom: 0;
-}
-.detail-boxes-left hr {
-  border: 0;
-  border-top: 1px solid #d9d9d9;
-  border-bottom: 1px solid #ffffff;
-  margin: 5px 0 10px;
-}
-.detail-boxes-left h3,
-.detail-boxes-left h4,
-.detail-boxes-left h5,
-.detail-boxes-left h6 {
-  text-transform: uppercase;
-  color: #999999;
-  margin-top: 0;
-}
 .popover-info-user h5 {
   color: red;
   padding: 10px;
@@ -5450,7 +5383,6 @@ h6 {
   padding: 10px;
 }
 .bottom-section {
-  font: 12px/14px 'Ubuntu', sans-serif;
   color: #555555;
   margin-top: 10px;
   min-height: 50px;

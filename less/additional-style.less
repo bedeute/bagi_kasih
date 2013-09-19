@@ -1,1 +1,77 @@
-additional-style
+@import "bootstrap.less";
+
+.profile-title {
+	h3 {margin-top: 0; margin-bottom: 10px; line-height: 30px;}
+
+}
+
+.detail-boxes > .form-horizontal > .control-group:last-child {margin-bottom: 5px;}
+
+.detail-boxes,
+.detail-boxes-left {
+
+	.border-radius(6px);
+	padding: 10px;
+	border-color: darken(@grayLighter, 15%);
+
+	table {
+		margin-bottom: 0;
+	}
+
+}
+
+.detail-boxes {
+
+	.control-label {
+		width: 100px;
+	}
+
+	.controls {
+		margin-left: 120px;
+	}
+
+	.form-horizontal {
+		margin-bottom: 0;
+	}
+
+	&.member {
+
+		td {
+			vertical-align: middle;
+		}
+	}
+
+	&.volunteer {
+
+		blockquote {background: lighten(@grayLighter, 3%); margin-bottom: 5px;}
+	}
+}
+
+
+
+.subtitle {
+	#gradient > .vertical(lighten(@grayLighter, 3%), @grayLighter);
+	text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+	margin: -9px -9px 8px;
+	color: @bkRed;
+	padding: 8px 10px;
+	border-bottom: 1px solid darken(@grayLighter, 5%);
+	.box-shadow(inset 0 -1px @white);
+
+	&:first-child {.border-top-radius(5px);}
+}
+
+
+.detail-boxes-left {
+
+	&.donasi {
+
+		td {
+			padding: 8px 0;
+
+			h4 {
+				margin: 0;
+			}
+		}
+	}
+}
