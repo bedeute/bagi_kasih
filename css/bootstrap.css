@@ -212,12 +212,12 @@ body {
   background-color: #ffffff;
 }
 a {
-  color: #46a546;
+  color: #0088cc;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #378137;
+  color: #005580;
   text-decoration: underline;
 }
 .img-rounded {
@@ -5370,9 +5370,6 @@ body {
 }
 .right-side > .row-fluid > .span3 > .btn {
   margin-bottom: 5px;
-}
-.right-side {
-  padding: 10px;
 }
 .popover-info-user h5 {
   color: red;

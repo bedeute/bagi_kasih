@@ -109,7 +109,7 @@
 
 .arrow-right:after {
     border-left: 14px solid transparent;
-    border-bottom: 15px solid #F5F5F5;
+    border-bottom: 15px solid lighten(@grayLighter, 4%);;
     border-right: 14px solid transparent;
     content: "";
     display: block;
@@ -133,6 +133,28 @@
 
 .fundraiser-profile {
 
+	.thumbnail > .row-fluid {
+
+		.span7{
+
+			padding: 10px 0;
+
+			span {font:bold italic 13px @sansFontFamily;}
+
+			h4 { margin:0;}
+			}
+
+		.span5 > img {margin:5px;}
+
+	}
+
+	.lead {
+		margin:2px 8px 0;
+		font: normal 14px/20px @sansFontFamily;
+
+		a { margin: 0 8px;}
+	}
+
 	.bottom-section {
 		.input-append > a {color: @white;}
 		#gradient > .vertical(lighten(@grayLighter, 4%), @grayLighter);
@@ -141,4 +163,17 @@
 		margin: 10px -4px -4px;
 		padding: 10px 8px;
 	}
+}
+
+.statistik {
+	#gradient > .vertical(lighten(spin(@bkRed,5), 55%), lighten(spin(@bkRed,5), 45%));
+	color: @grayDark;
+
+	h2 {
+		margin: 5px 0 0;
+
+		&:first-child {margin-top: 0;}
+	}
+
+	span {color:@gray; font-size: 14px; font-weight: bold;}
 }
