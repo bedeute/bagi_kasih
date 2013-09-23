@@ -46,38 +46,87 @@
                     <div class="span7 left-side">
                         <div class="thumbnail detail-boxes">
                             <h4 class="subtitle">Donasi</h4>
-                            <h5>Tentukan besar donasi anda (IDR) kepada <em>Yayasan Anak Jalanan</em> </h5>
-                            <label class="radio">
-                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                                10.000
-                            </label>
-                            <label class="radio">
-                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                                20.000
-                            </label>
-                            <label class="radio">
-                                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
-                                50.000
-                            </label>
-                            <label class="radio">
-                                <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
-                                75.000
-                            </label>
-                            <label class="radio">
-                                <input type="radio" name="optionsRadios" id="optionsRadios5" value="option5">
-                                100.000
-                            </label>
-                            <label class="radio">
-                                <input type="radio" name="optionsRadios" id="optionsRadios6" value="option6">
-                                200.000
-                            </label>
-                            <label class="radio">
-                                <input type="radio" name="optionsRadios" id="optionsRadios7" value="option7">
-                                500.000
-                            </label>
-                            <label class="radio pull-left">
-                                <input type="radio" name="optionsRadios" id="optionsRadios8" value="option8">
-                            </label><input type="text">
+                            <h5>Tentukan besar donasi anda kepada <em>Yayasan Anak Jalanan</em> </h5>
+                            <ul id="myTab" class="nav nav-tabs">
+                                <li class="active"><a href="#idr" data-toggle="tab">Rupiah (IDR)</a></li>
+                                <li class=""><a href="#usd" data-toggle="tab">Dollar (USD)</a></li>
+                            </ul>
+                            <div id="myTabContent" class="tab-content">
+                                <div class="tab-pane fade active in" id="idr">
+                                    <div class="offset1">
+                                        <label class="radio">
+                                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                            10.000
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                            20.000
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                                            50.000
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
+                                            75.000
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="optionsRadios" id="optionsRadios5" value="option5">
+                                            100.000
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="optionsRadios" id="optionsRadios6" value="option6">
+                                            200.000
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="optionsRadios" id="optionsRadios7" value="option7">
+                                            500.000
+                                        </label>
+                                        <label class="radio pull-left">
+                                            <input type="radio" name="optionsRadios" id="optionsRadios8" value="option8">
+                                            Lainnya:
+                                        </label><input type="text">
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="usd">
+                                    <div class="offset1">
+                                        <label class="radio">
+                                            <input type="radio" name="optionsRadios" id="optionsRadios9" value="option9" checked>
+                                            10.000
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="optionsRadios" id="optionsRadios10" value="option10">
+                                            20.000
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="optionsRadios" id="optionsRadios11" value="option11">
+                                            50.000
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="optionsRadios" id="optionsRadios12" value="option12">
+                                            75.000
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="optionsRadios" id="optionsRadios13" value="option13">
+                                            100.000
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="optionsRadios" id="optionsRadios14" value="option14">
+                                            200.000
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="optionsRadios" id="optionsRadios15" value="option15">
+                                            500.000
+                                        </label>
+                                        <label class="radio pull-left">
+                                            <input type="radio" name="optionsRadios" id="optionsRadios16" value="option16">
+                                            Lainnya:
+                                        </label><input type="text">
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
                             <hr>
                             <h4>Tentang Anda</h4>
                             <form style="margin-bottom:4px;">
@@ -104,6 +153,12 @@
                     <!-- Right side of detail page -->
                     <div class="span5 right-side">
                         <div class="thumbnail detail-boxes">
+                            <h4>Pilih cara pembayaran donasi:</h4>
+                            <label class="radio">
+                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                <img src="img/paypal-secure.png">
+                            </label>
+                            
 
                         </div>
                     </div>
